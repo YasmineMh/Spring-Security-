@@ -13,14 +13,14 @@ after_success:
   - git config --global user.email "yasmine.mhiri96@gmail.com"
   - git config --global user.name "YasmineMh"
   - git clone --depth=50 --branch=master  https://github.com/YasmineMh/Spring-Security-.git
-  - cd Spring Security
+  - cd Spring-Security-
   - ls -l
-  - cp -r /home/travis/build/garashis/SpringSecurity/target $HOME/buildApk/SpringSecurity
+  - cp -r /home/travis/build/YasmineMh/Spring-Security-/target $HOME/buildApk/SpringSecurity
   - ls -l 
   - git add -f
   - git remote rm origin
-  - git remote add origin https://graphis:$GITHUB_API_KEY@githun.com/graphis/SpringSeccurity.git
+  - git remote add origin https://graphis:$GITHUB_API_KEY@githun.com/YasmineMh/Spring-Security-.git
   - git add -f
-  - git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed"
+  - git commit -m "Yasmine build $TRAVIS_BUILD_NUMBER pushed"
   - git push -fq origin master
   - echo -e "DONE!"
